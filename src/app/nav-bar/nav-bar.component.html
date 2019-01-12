@@ -1,0 +1,33 @@
+<nav class="navbar sticky-top navbar-expand-md  navbar-dark" style="background-color: #e02222;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/home">LOGO</a>
+    </div>
+    <button class="navbar-toggler"
+      type="button" data-toggle="collapse"
+      data-target="#navbarToggler" aria-controls="navbarToggler"
+      aria-expanded="false" aria-label="Toggle navigation"
+      (click)="toggleCollapse()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-md-flex justify-content-md-end " [class.show]="show" id="navbarCollapse">
+      <div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" (click)="hideCollapse()" routerLink="/home" routerLinkActivate="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="hideCollapse()" routerLink="/blog" routerLinkActivate="active">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="hideCollapse()" routerLink="/about" routerLinkActivate="active">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="hideCollapse()" routerLink="/contact" routerLinkActivate="active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
