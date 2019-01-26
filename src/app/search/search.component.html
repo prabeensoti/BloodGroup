@@ -1,36 +1,36 @@
-<div class="container container-fluid">
+<div class="container container-fluid text-danger">
   <label><h2>Search for Blood</h2></label>
 <form>
   <div class="form-row">
-    <div class="form-group col-md-4 input-group">
+    <div class="form-group col-md-4 input-group ">
       <div class="input-group-prepend">
-        <span class="input-group-text">Provinance</span>
+        <span class="input-group-text bg-danger border-danger text-white">Provinance</span>
       </div>
-      <select class="form-control" (change)="filterByProvinance($event.target.value)">
+      <select class="form-control border-danger btn-danger bg-transparent text-danger " (change)="filterByProvinance($event.target.value)">
         <option value="default">All</option>
         <option *ngFor="let state of states" value={{state}} >{{state}}</option>
       </select>
     </div>
     <div class="form-group col-md-4 input-group">
       <div class="input-group-prepend">
-          <span class="input-group-text">City</span>
+          <span class="input-group-text bg-danger border-danger text-white">City</span>
       </div>
-      <select class="form-control" (change)="filterByCity($event.target.value)">
+      <select class="form-control border-danger btn-danger bg-transparent text-danger" (change)="filterByCity($event.target.value)">
           <option value="default">All</option>
           <option *ngFor="let city of cities" value={{city}}>{{city}}</option>
       </select>
     </div>
     <div class="form-group col-md-3 input-group">
       <div class="input-group-prepend">
-          <span class="input-group-text">Blood Group</span>
+          <span class="input-group-text bg-danger border-danger text-white">Blood Group</span>
       </div>
-      <select class="form-control" (change)="filterByBloodGroup($event.target.value)">
+      <select class="form-control border-danger btn-danger bg-transparent text-danger" (change)="filterByBloodGroup($event.target.value)">
           <option value="default">All</option>
           <option *ngFor="let bloodGroup of bloodGroups" value={{bloodGroup}}>{{bloodGroup}}</option>
       </select>
     </div>
     <div class="col-md-1">
-        <button class="btn btn-primary" type="submit">Search</button>
+        <button class="btn btn-danger" type="submit">Search</button>
     </div>
   </div>
 </form>

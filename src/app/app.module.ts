@@ -15,6 +15,7 @@ import { CommunityComponent } from './home/community/community.component';
 import { PeopleVoiceComponent } from './home/people-voice/people-voice.component';
 import { PhotoSliderComponent } from './home/photo-slider/photo-slider.component';
 import { SearchOutputComponent } from './search/search-output/search-output.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SearchOutputComponent } from './search/search-output/search-output.comp
     CommunityComponent,
     PeopleVoiceComponent,
     PhotoSliderComponent,
-    SearchOutputComponent
+    SearchOutputComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
