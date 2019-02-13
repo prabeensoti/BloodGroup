@@ -1,0 +1,11 @@
+.card.col-md-3{
+  padding: 2%;
+  border: transparent;
+}
+div.card-footer{
+padding: 0%;
+border: transparent;
+}
+div.cardbody{
+  padding: 0%;
+}

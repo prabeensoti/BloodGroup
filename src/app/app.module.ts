@@ -10,6 +10,12 @@ import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SearchComponent } from './search/search.component';
+import { AchivementComponent } from './home/achivement/achivement.component';
+import { CommunityComponent } from './home/community/community.component';
+import { PeopleVoiceComponent } from './home/people-voice/people-voice.component';
+import { PhotoSliderComponent } from './home/photo-slider/photo-slider.component';
+import { SearchOutputComponent } from './search/search-output/search-output.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { SearchComponent } from './search/search.component';
     BlogComponent,
     AboutComponent,
     ContactComponent,
-    SearchComponent
+    SearchComponent,
+    AchivementComponent,
+    CommunityComponent,
+    PeopleVoiceComponent,
+    PhotoSliderComponent,
+    SearchOutputComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
